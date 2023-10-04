@@ -5,17 +5,20 @@
 
 :root {
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte02: 'Passion One', cursive; 
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive; 
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--fonte01);
 }
 
 header {
@@ -27,6 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 6vw;  
 }
 
 header > p {
@@ -48,6 +53,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -61,7 +68,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.336);
 }
 
